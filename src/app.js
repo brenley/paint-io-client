@@ -7,7 +7,7 @@ import './app.css';
 // TODO 1.1: import socket.io-client
 import socketClient from 'socket.io-client';
 // TODO 1.2: create a new socket connection by invoking "socket.io-client". Convention is to name the returned socket instance "socket".
-const socket = socketClient("ws://locahost:3000"); // or one-liner: const socket = required("socket.io-client")();
+const socket = socketClient("ws://localhost:3000"); // or one-liner: const socket = required("socket.io-client")();
 
 socket.on("connect", () => {
   console.log("I'm connected!");
